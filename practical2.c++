@@ -3,6 +3,9 @@
 using namespace std;
 
 int main(){
+    //initialization Phase 
+
+    
     int numSymbols;
     cout << "Enter the number of symbols: ";
     cin >> numSymbols;
@@ -13,25 +16,28 @@ int main(){
         cin >> symbols[i];   
     }
 
-
+    //enter a how many states are there
     int numStates;
-    cout << "Enter the number of states: ";
+    cout << "Enter the numbe r of states: ";
     cin >> numStates;
 
+    //enter a starting state
     int StartingState;
     cout << "Enter the starting state: ";
     cin >> StartingState;
 
+    //enter a how many final states are there
     int FinalStates;
     cout << "Enter the number of final states: ";
     cin >> FinalStates;
 
-
+     //final states array
     int finalStates[FinalStates];
     cout << "Enter the final states: ";
     for(int i=1;i<=FinalStates;i++){
         cin >> finalStates[i];
     }
+
 
 //creation of table
 int transitionTable[numStates+1][numSymbols];
